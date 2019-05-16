@@ -1,0 +1,29 @@
+<!--
+Status: WORKING DRAFT
+
+Accessible Subforms.
+Example:  Select payment method
+* button scope?
+* Should not send more than needed for request.
+-->
+
+<form class="" action="index.html" method="post">
+  <input type="radio" id="cat1" name="category" value="1">
+  <input type="radio" id="cat2" name="category" value="2">
+  <input type="radio" id="cat3" name="category" value="3">
+  <label for="cat1">Category One</label>
+  <label for="cat2">Category Two</label>
+  <label for="cat3">Category Three</label>
+  <h2>Stack subfroms</h2>
+  <fieldset id="cat1SubForm">
+    <legend>Category One Options</legend>
+    <p>
+      <input type="checkbox" id="plate" name="gold" value="">
+      <label for="">Gold</label>
+    </p>
+    <button type="button" name="button">Submit Category One</button>
+  </fieldset>
+  ...
+
+
+</form>

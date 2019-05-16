@@ -1,0 +1,44 @@
+<h2>Anchor Link Examples</h2>
+<p>These are valid HTML examples with structural components. </p>
+
+<p>Questions</p>
+<ol>
+    <li>How do Assistive Technology (<abbr title="Assistive Technology">AT</abbr>) User Agents (<abbr title="User Agent">UA</abbr>) present them?</li>
+    <li>If <abbr title="User Agent">UA</abbr> does not present the markup attributes, is it a UA or Web content issue?</li>
+</ol>
+
+<style media="screen">
+  dt {
+    color:red;
+    margin-top:1em;
+    text-transform:capitalize;
+  }
+  dd + dd {font-style:italic}
+</style>
+
+<p>Examples</p>
+<dl>
+  <dt>Simple</dt>
+  <dd><a href="#">href="#"</a></dd>
+  <dd>Expectation:  UA presents link destination</dd>
+  <dt>Target new window</dt>
+  <dd><a href="#" target="_blank">href="#" target="_blank"</a></dd>
+  <dd>Expectation: UA presents HREF AND behavior as opening in a new window.</dd>
+  <dt>External relationship</dt>
+  <dd><a href="#external" rel="external">a href="#" rel="external"</a></dd>
+  <dd>Expectation: UA presents HREF AND as off-site link.</dd>
+  <dt>Help</dt>
+  <dd><a href="#help" rel="help">a href="#"</a></dd>
+  <dt>Tel:</dt>
+  <dd><a href="tel:#">a href="tel:#"</a></dd>
+  <dd>Expectation: UA prompts user to confirm opening link in new application or to place call.</dd>
+  <dt>Mailto:</dt>
+  <dd><a href="mailto:#">href="mailto:#"</a></dd>
+  <dd>Expectation: UA opens link in system email.</dd>
+  <dt>PDF Download</dt>
+  <dd><a href="#download" download type="application/pdf">download type="pdf"</a></dd>
+  <dd>Expectation:  UA indicates HREF is PDF document for download.</dd>
+  <dt>Language</dt>
+  <dd><a href="#french" hreflang="fr">href="#" hreflang="fr"</a></dd>
+  <dd>Expectation:  UA indentifies HREF document as French document</dd>
+</dl>
