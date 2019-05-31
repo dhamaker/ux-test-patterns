@@ -75,7 +75,6 @@ _Actual:_
 Help with proactive and reactive messaging.  Older user agents should ignore them and use the basic validation experiece (server-side)
 
 * <code>maxlength</code>
-* <code>minlength</code>
 * <code>required</code>
 * <code>pattern</code> fine grain validation matching using regex.
 * <code>type</code> identifies the type of control the user agent will expose to the user.
