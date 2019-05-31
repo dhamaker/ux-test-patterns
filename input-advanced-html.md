@@ -6,7 +6,7 @@ layout: default
 
 ## Pattern Test Case
 
-<form id="t3" action="#" method="get">
+><form id="t3" action="#" method="get">
   <p>
     <label for="mobile">Mobile Phone</label>
     <input type="tel" id="mobile" name="mobile" value="" required pattern="((\(\d{3}\))) ?\d{3}-\d{4}" autocomplete="tel" placeholder="(###) ###-####" title="Enter area code and phone number using parenthese and hyphen.  We will only use this phone number to protect access to your account.">
@@ -28,13 +28,20 @@ layout: default
 
 ## Presentation: NVDA on Firefox
 ### <code>onfocus</code> event
-_Syntax:_ label + valid status + "edit" + required + title + placeholder + value
+_Syntax:_
+
+label + valid status + "edit" + required + title + placeholder + value
+
+_Actual:_
 
 > Mobile Phone edit required invalid  number has autocomplete Enter area code and phone number using parenthese and hyphen.  We will only use this phone number to protect access to your account. [pause] number number number [pause] number number number and four number blank.
 
 ### <code>oninvalid</code> event</h5>
-_Syntax:_ "Alert: Please match the requested format:" + title
+_Syntax:_
 
+"Alert: Please match the requested format:" + title
+
+_Actual:_
 > Alert: Please fill out this field.
 
 > Alert: Please match the requested format: Enter area code and phone number using parenthese and hyphen.  We will only use this phone number to protect access to your account.</q>
