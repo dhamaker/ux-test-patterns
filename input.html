@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Form Techniques</title>
+    <style media="screen">
+      body {font-family:sans-serif; line-height:1.5}
+      input {display:block;}
+      label span, .inputInstructions {display:block;color:#666;font-style:italic;font-weight:normal;}
+      form {margin:2em;border:1px solid #666;padding:1em;}
+      label {font-weight:bold;font-size:.85em;}
+      #t1 label span {color:rgba(0,0,0,0); display:inline;}
+      q {display:block;padding:1em;background:#eee;margin:1em;}
+    </style>
+  </head>
+  <body>
+    <h1>HTML Forms</h1>
+    <main>
+      <h2>Techniques</h2>
+      <form id="t0" action="#" method="get">
+        <h3>0 - Plain HTML (Current technique)</h3>
+        <p>
+          <label for="example1">Date of Birth <span>MM/DD/YYYY</span></label>
+          <input type="text" id="example1" name="example1" value="">
+        </p>
+        <button type="submit" name="button">Test</button>
+        <dl class="">
+          <dt>Advantages</dt>
+          <dd>Clear aural presentation</dd>
+          <dd>Simple. Easy to code and test.  Fewer things to break.</dd>
+          <dd>Fewer things to break</dd>
+          <dd>Affordable to maintain</dd>
+          <dt>Disadvantages</dt>
+          <dd>Style is less clean looking</dd>
+        </dl>
+      </form>
+
+      <form id="t1" action="#" method="get">
+        <h3>1. Hide instructions from visual presentation</h3>
+        <p>
+          <label for="phone">Daytime Phone <span>(###) ##-####)</span></label>
+          <input type="tel" id="phone" name="phone" value="" placeholder="(###) ###-####">
+        </p>
+        <button type="submit" name="button">Test</button>
+        <dl class="">
+          <dt>Advantages</dt>
+          <dd>Author preference</dd>
+          <dt>Disadvantages</dt>
+          <dd>Additional markup and ARIA labeling </dd>
+          <dd>Screenreader repeats label text: once for label and once for placeholder</dd>
+          <dd>Hard for QA review and suseptible to prodcution copy and paste errors because copy is invisible.</dd>
+          <dd>Placeholder text may not be accessible to users with reduced vision.  Low color contrast may impact many of your usres because eyes change as people age beginning in our 40s.</dd>
+          <dd>Placeholder value disappears once user begins typing, depriving them of a visual model, user will not be able to proof the format.</dd>
+          <dd>Preferred formats is less clear.  So higher error rates.</dd>
+        </dl>
+      </form>
+
+      <form id="t2" action="#" method="get" autocomplete="off">
+        <h3>1. Labels below</h3>
+        <p>
+          <label id="ssnLabel" for="ssn" >Social Security Number </label>
+          <input aria-labelledby="ssnLabel" aria-describedby="ssnDesc" type="text" id="ssn" name="ssn" value="" placeholder="###-##-####" required>
+          <span id="ssnDesc" class="inputInstructions">9 digit number including hyphens</span>
+        </p>
+        <button type="submit">Test</button>
+        <h4>Presentation: NVDA on Firefox</h4>
+        <h5><code>onfocus</code> event</h5>
+        <p>Syntax: label + "edit" + required + placeholder + value </p>
+        <q>Social security number edit required.  Invalid entry 9 digit number including hyphens.  number number number number number four number. blank.</q>
+        <h5><code>oninvalid</code> event</h5>
+        <p>Syntax: "Alert: Please fill ou this field."</p>
+        <q>Alert: Please fill out this field.</q>
+        <h4>Pros and Cons</h4>
+        <dl class="">
+          <dt>Advantages</dt>
+          <dd>Author alternate</dd>
+          <dd>Clear aural presentation</dd>
+          <dt>Disadvantages</dt>
+          <dd>Additional markup and ARIA tagging.</dd>
+          <dd>Placeholder text may not be accessible to users with reduced vision.  Low color contrast may impact many of your usres because eyes change as people age beginning in our 40s.</dd>
+          <dd>Placeholder value disappears once user begins typing, depriving them of a visual model, user will not be able to proof the format.</dd>
+          <dd>Aural presentation includes redundant description and placeholder copy</dd>
+        </dl>
+      </form>
+
+      <form id="t3" action="#" method="get">
+        <h3>3. HTML5 Forms Attributes</h3>
+        <p>
+          <label for="mobile">Mobile Phone</label>
+          <input type="tel" id="mobile" name="mobile" value="" required pattern="((\(\d{3}\))) ?\d{3}-\d{4}" autocomplete="tel" placeholder="(###) ###-####" title="Enter area code and phone number using parenthese and hyphen.  We will only use this phone number to protect access to your account.">
+        </p>
+        <button type="submit">Test</button>
+        <h4>Presentation: NVDA on Firefox</h4>
+        <h5><code>onfocus</code> event</h5>
+        <p>Syntax: label + valid status + "edit" + required + title + placeholder + value </p>
+        <q>Mobile Phone edit required invalid  number has autocomplete Enter area code and phone number using parenthese and hyphen.  We will only use this phone number to protect access to your account. [pause] number number number [pause] number number number and four number blank.</q>
+        <h5><code>oninvalid</code> event</h5>
+        <p>Syntax: "Alert: Please match the requested format:" + title</p>
+        <q>Alert: Please fill out this field.</q>
+        <q>Alert: Please match the requested format: Enter area code and phone number using parenthese and hyphen.  We will only use this phone number to protect access to your account.</q>
+        <h4>Pros and Cons</h4>
+        <dl class="">
+          <dt>Advantages</dt>
+          <dd>Author preference</dd>
+          <dt>Disadvantages</dt>
+          <dd>Additional markup and ARIA labeling </dd>
+          <dd>Hard for QA review and suseptible to prodcution copy and paste errors because copy is invisible.</dd>
+          <dd>Placeholder text may not be accessible to users with reduced vision.  Low color contrast may impact many of your usres because eyes change as people age beginning in our 40s.</dd>
+          <dd>Placeholder value disappears once user begins typing, depriving them of a visual model, user will not be able to proof the format.</dd>
+          <dd>Preferred formats is less clear.  So higher error rates.</dd>
+        </dl>
+      </form>
+
+
+      <h2>Notes</h2>
+      <ul>
+        <li>Must have server-side validation.  This is the starting point for user experience.</li>
+        <li>Client-side validation should be used as progressive enhancement and guidance, not as data validation; it's function is to enhance the user experience, speed completion, reduce negative 'error' flows,  and increase conversions.  Forms can be easily hacked to bypass native validation and javascript enhancements.</li>
+        <li>Use HTML 5.2 forms.  Older user agents should degrade gracefully.</li>
+      </ul>
+
+      <h2>Input Attributes.</h2>
+      <p>Help with proactive and reactive messaging.  Older user agents should ignore them and use the basic validation experiece (server-side)</p>
+      <ul>
+        <li><code>max-length</code></li>
+        <li><code>min-length</code></li>
+        <li><code>required</code></li>
+        <li><code>pattern</code> fine grain validation matching using regex.</li>
+        <li><code>type</code> identifies the type of control the user agent will expose to the user.</li>
+        <li><code>autocomplete</code>  with the appropraite value.  identifies the values the input will represent.</li>
+        <li><code>title</code> tooltip and validation message (Chrome)</li>
+        <li><code>placeholder</code> enhancement for some users  </li>
+      </ul>
+      <h2>References</h2>
+      <a href="https://www.w3.org/TR/2017/REC-html52-20171214/sec-forms.html#clientside-form-validation">Client-Side Form Validation</a>
+      <a href="https://www.w3.org/WAI/tutorials/forms/">Web Accessibility Tutorials Forms</a>
+    </main>
+  </body>
+</html>
