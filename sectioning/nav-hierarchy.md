@@ -2,10 +2,11 @@
 title: <nav> hierarchy
 ---
 To do
-Validate 
-1. body > nav
-* body > header > nav
-* body > footer > nav
+Test cases to evaluate
+  
+1 body > nav
+2 body > header > nav
+4 body > footer > nav
 * body > main > nav
 
 ## Expectation
