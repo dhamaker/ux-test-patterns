@@ -14,6 +14,7 @@ layout: default
       <button type="submit">Test</button>
 </form>
 
+
 ## Code
 ```
 <form id="t3" action="#" method="get">
@@ -63,8 +64,8 @@ _Syntax:_ "Alert: Please match the requested format:" + title
 ## Input Attributes.
 Help with proactive and reactive messaging.  Older user agents should ignore them and use the basic validation experiece (server-side)
 
-* <code>max-length</code>
-* <code>min-length</code>
+* <code>maxlength</code>
+* <code>minlength</code>
 * <code>required</code>
 * <code>pattern</code> fine grain validation matching using regex.
 * <code>type</code> identifies the type of control the user agent will expose to the user.
