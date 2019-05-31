@@ -2,7 +2,7 @@
 title: Advanced HTML Form Techniques
 layout: default
 ---
-# {{title}}
+# {{page.title}}
 
 ## Test Case
 
