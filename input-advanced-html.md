@@ -7,12 +7,12 @@ layout: default
 ## Pattern Test Case
 
 ><form id="t3" action="#" method="get">
-  <p>
-    <label for="mobile">Mobile Phone</label>
-    <input type="tel" id="mobile" name="mobile" value="" required pattern="((\(\d{3}\))) ?\d{3}-\d{4}" autocomplete="tel" placeholder="(###) ###-####" title="Enter area code and phone number using parenthese and hyphen.  We will only use this phone number to protect access to your account.">
+>  <p>
+>    <label for="mobile">Mobile Phone</label>
+>    <input type="tel" id="mobile" name="mobile" value="" required pattern="((\(\d{3}\))) ?\d{3}-\d{4}" autocomplete="tel" placeholder="(###) ###-####" title="Enter area code and phone number using parenthese and hyphen.  We will only use this phone number to protect access to your account.">
   </p>
-      <button type="submit">Test</button>
-</form>
+>  <button type="submit">Test</button>
+> </form>
 
 
 ## Code
