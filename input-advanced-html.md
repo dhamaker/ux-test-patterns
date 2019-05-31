@@ -4,7 +4,7 @@ layout: default
 ---
 # Advanced HTML 5.1 Forms Techniques
 
-## Pattern Test Case
+## Test Case
 
 <form id="t3" action="#" method="get">
   <p>
