@@ -36,7 +36,7 @@ _Actual:_
 
 > Mobile Phone edit required invalid  number has autocomplete Enter area code and phone number using parenthese and hyphen.  We will only use this phone number to protect access to your account. [pause] number number number [pause] number number number and four number blank.
 
-### <code>oninvalid</code> event</h5>
+### <code>oninvalid</code> event
 _Syntax:_
 
 "Alert: Please match the requested format:" + title
@@ -44,7 +44,7 @@ _Syntax:_
 _Actual:_
 > Alert: Please fill out this field.
 
-> Alert: Please match the requested format: Enter area code and phone number using parenthese and hyphen.  We will only use this phone number to protect access to your account.</q>
+> Alert: Please match the requested format: Enter area code and phone number using parenthese and hyphen.  We will only use this phone number to protect access to your account.
 
 
 ## Advantages
