@@ -1,4 +1,4 @@
-# HTML5 Forms Attributes
+# Advanced HTML 5.1 Forms Techniques
 
 <form id="t3" action="#" method="get">
   <p>
@@ -8,6 +8,16 @@
       <button type="submit">Test</button>
 </form>
 
+## Code
+```
+<form id="t3" action="#" method="get">
+  <p>
+    <label for="mobile">Mobile Phone</label>
+    <input type="tel" id="mobile" name="mobile" value="" required pattern="((\(\d{3}\))) ?\d{3}-\d{4}" autocomplete="tel" placeholder="(###) ###-####" title="Enter area code and phone number using parenthese and hyphen.  We will only use this phone number to protect access to your account.">
+  </p>
+      <button type="submit">Test</button>
+</form>
+```
 
 ## Presentation: NVDA on Firefox
 ### <code>onfocus</code> event
@@ -36,7 +46,7 @@ _Syntax:_ "Alert: Please match the requested format:" + title
  * Placeholder value disappears once user begins typing, depriving them of a visual model, user will not be able to proof the format.
  * Preferred formats is less clear.  So higher error rates.
  * Consistent validation matching needs close integration between  publishing and form validation applications so front-end matches back-end instructions.
- 
+
 
 ## Notes
 * Must have server-side validation.  This is the starting point for user experience.
