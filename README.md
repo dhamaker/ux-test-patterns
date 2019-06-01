@@ -21,5 +21,5 @@ TBD: metadata schema: YAML front matter
 ## Contents
 
 ### Form Inputs
-[HTML5 Native Forms Pattern](interactive/inputs/input-advanced-html.md)
-[Multiple <nav> Elements](sectioning/nav-hierarchical.md)
+* [HTML5 Native Forms Pattern](interactive/inputs/input-advanced-html.md)
+* [Multiple ```nav``` Elements](sectioning/nav-hierarchy.md)
