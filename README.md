@@ -20,6 +20,8 @@ TBD: metadata schema: YAML front matter
 
 ## Contents
 
-### Form Inputs
+### Form Interaction
 * [HTML5 Native Forms Pattern](interactive/inputs/input-advanced-html.md)
+
+### Sectioning
 * [Multiple ```nav``` Elements](sectioning/nav-hierarchy.md)
