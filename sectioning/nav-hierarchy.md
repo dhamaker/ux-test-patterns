@@ -8,7 +8,7 @@ Test cases to evaluate
 ```
   <body>
     <header>
-      <p class="logomark"></p>
+      <p class="logomark">Site Identifier</p>
       <nav>
         <a rel="alt" href="/es/home.html" hreflang="es">En Espanol</a>
         <a href="login.html">Log In</a>
