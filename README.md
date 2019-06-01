@@ -18,7 +18,8 @@ TBD: metadata schema: YAML front matter
 | accessibility | how accessible is pattern | {fail;low;med;high} |
 
 
-## Contents
+## Test Cases
+_Note: temporary list till section index pages are created_
 
 ### Form Interaction
 * [HTML5 Native Forms Pattern](interactive/inputs/input-advanced-html.md)
