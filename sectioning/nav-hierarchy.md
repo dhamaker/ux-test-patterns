@@ -11,7 +11,7 @@ Test cases to evaluate
       <p class="siteID">Site Identifier</p>
       <nav>
         <a href="#main">Skip to Main Content</a>
-        <a rel="alt" href="/es/home.html" hreflang="es">En Espanol</a>
+        <a rel="alternate" href="/es/this.html" hreflang="es">En Espanol</a>
         <a href="login.html">Log In</a>
       </nav>
     <header>
@@ -27,7 +27,7 @@ Test cases to evaluate
     <footer>
       <p><small>&copy; self</small></>
       <nav>
-        <a href="privacy.html">Privacy</a>
+        <a rel="license" href="privacy.html">Privacy</a>
         <a href="about.html">About Us</a>
         <a href="contact.html">Contact Us</a>
       </nav>
