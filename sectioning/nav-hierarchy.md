@@ -41,7 +41,9 @@ Test cases to evaluate
 2. body > main > nav
 
 ## Expectation
-The nav block relate to different parts of the document.  Role of nav should be determned programmatically given standards compliant semantic structure.  Principles of use standards, semantic markup, and minize redundance conflicts with [ARIA Landmark guidance](ttps://www.w3.org/TR/wai-aria-practices/examples/landmarks/navigation.html)
+The nav blocks play different roles relating to the part of the document.  Role of nav should be determned programmatically given standards compliant semantic structure.  Principles of use standards, semantic markup, and minize redundance conflicts with [ARIA Landmark guidance](ttps://www.w3.org/TR/wai-aria-practices/examples/landmarks/navigation.html)
+
+Use of ```nav``` in header and footer blocks is intended to impress that these links are part of major site navigation.
 
 * Site Nav. Hierarchical Navigation.  Typical for accessing a sites main sections, 'fat footer', 'site map', or Category
 * Site Banner Nav.  Global utilities.  Typcial of site options link alternate language, log in, etc.
@@ -49,6 +51,8 @@ The nav block relate to different parts of the document.  Role of nav should be 
 * Main Nav.  Lateral navigation.  Typical for a table of contents menus used to access related resources, or SubCategory.
 
 
+## Actual
 
-
+## Discussion
+Arguement is made to use only one ```nav``` per document.  The HTML5.2 notes it is "intended for major navigation blocks"
 
