@@ -6,7 +6,7 @@ Repository of standards compliant HTML pattern test cases.  Purpose is to provid
 3. description of actual experience using different presentations.
 
 
-## Createing new test cases
+## Creating new test cases
 TBD: metadata schema: YAML front matter
 
 | attribute | desc | format |
@@ -16,6 +16,13 @@ TBD: metadata schema: YAML front matter
 | status | is doc ready for publication | {draft; published |
 | recommnedation | guideline for pattern use | {do not use; sufficient; recommendation} |
 | accessibility | how accessible is pattern | {fail;low;med;high} |
+
+### Test Case Outline
+
+1. Test Case
+2. Code
+3. Pattern Description
+4. Results
 
 
 ## Test Cases
