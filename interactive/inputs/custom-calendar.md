@@ -10,7 +10,7 @@ title: Custom Calendar
     <input type="date" id="dateType" name="dateType" value="">
   </p>
   <button type="submit">Test</button>
-</section>
+</form>
 
 <h2>Complex Example - standard HTML elements</h2>
 <fieldset class="calendar-standard">
@@ -29,9 +29,10 @@ title: Custom Calendar
       <option value="02">February</option>
       <option value="...">...</option>
       <option value="12">December</option>
-</select>
+    </select>
   </p>
-  <fieldset>
+
+<fieldset>
     <legend>Day</legend>
     <label><input type="radio" name="day" value="01">1</label>
     <label><input type="radio" name="day" value="01">2</label>
