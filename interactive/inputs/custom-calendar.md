@@ -3,12 +3,14 @@ title: Custom Calendar
 ---
 
 # {{page.title}}
-
-<h2>Native Example</h2>
-<p>
-  <label for="dateType">Date</label>
-  <input type="date" name="dateType" value="">
-</p>
+<form method="get" action="" class="test">
+  <h2>Native Calendar</h2>
+  <p>
+    <label for="dateType">Date</label>
+    <input type="date" id="dateType" name="dateType" value="">
+  </p>
+  <button type="submit">Test</button>
+</section>
 
 <h2>Complex Example - standard HTML elements</h2>
 <fieldset class="calendar-standard">
@@ -41,14 +43,11 @@ title: Custom Calendar
 ## Code
 
 
-
-<details>
-  <summary>
-   ## Pattern Description
-  </summary>
-  
-  a paragraph.
+## Pattern Description
+a paragraph.
   
   * item one
   * item two
-</details>
+
+
+## Results
