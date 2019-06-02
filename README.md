@@ -14,7 +14,7 @@ TBD: metadata schema: YAML front matter
 | title | title for page, h1, and links| |
 | template | template to use for presentation | (default) |
 | status | is doc ready for publication | {draft; published |
-| recommnedation | guideline for pattern use | {do not use; sufficient; recommendation} |
+| recommendation | guideline for pattern use | {do not use; sufficient; recommendation} |
 | accessibility | how accessible is pattern | {fail;low;med;high} |
 
 ### Test Case Outline
@@ -22,7 +22,10 @@ TBD: metadata schema: YAML front matter
 1. Test Case
 2. Code
 3. Pattern Description
+  * usage
+  * expected presentations: desktop, mobile, audio
 4. Results
+
 
 
 ## Test Cases
