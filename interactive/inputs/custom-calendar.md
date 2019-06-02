@@ -36,7 +36,6 @@ title: Custom Calendar
     <label><input type="radio" name="day" value="01">3</label>
     <label><input type="radio" name="day" value="01">4</label>
   </fieldset>
-  </p>
 </fieldset>
 
 ## Code
@@ -44,7 +43,10 @@ title: Custom Calendar
 
 
 <details>
-  <summary>Pattern Description</summary>
+  <summary>
+   ## Pattern Description
+  </summary>
+  
   a paragraph.
   
   * item one
