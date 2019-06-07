@@ -26,30 +26,6 @@ layout: default
 </form>
 ```
 
-## Presentation JAWS on Firefox
-TBD
-
-## Presentation: NVDA on Firefox
-### <code>onfocus</code> event
-_Syntax:_
-
-label + valid status + "edit" + required + title + placeholder + value
-
-_Actual:_
-
-> Mobile Phone edit required invalid  number has autocomplete Enter area code and phone number using parenthese and hyphen.  We will only use this phone number to protect access to your account. [pause] number number number [pause] number number number and four number blank.
-
-### <code>oninvalid</code> event
-_Syntax:_
-
-"Alert: Please match the requested format:" + title
-
-_Actual:_
-> Alert: Please fill out this field.
-
-> Alert: Please match the requested format: Enter area code and phone number using parenthese and hyphen.  We will only use this phone number to protect access to your account.
-
-
 ## Advantages
   * HTML Standards no custom
   * Future scalable
@@ -65,13 +41,12 @@ _Actual:_
  * Consistent validation matching needs close integration between  publishing and form validation applications so front-end matches back-end instructions.
 
 
-## Notes
-* Must have server-side validation.  This is the starting point for user experience.
-* Client-side validation should be used as progressive enhancement and guidance, not as data validation; it's function is to enhance the user experience, speed completion, reduce negative 'error' flows,  and increase conversions.  Forms can be easily hacked to bypass native validation and javascript enhancements.
-* Use HTML 5.2 forms.  Older user agents should degrade gracefully.
+## Design Intent
+* Given server-side validation; all web forms must have server-side validation.  This is the starting point for user experience.
+* Use native HTML forms per 5.2 Standards: with HTML only, no javascript, no custom CSS.   Older user agents should degrade gracefully.
+* Client-side validation is for progressive enhancement and guidance, not as data validation; it's function is to enhance the user experience, speed completion, reduce negative 'error' flows,  and increase conversions.  Forms can be easily hacked to bypass native validation and javascript enhancements.
 
-
-## Input Attributes.
+### Input Attributes
 Help with proactive and reactive messaging.  Older user agents should ignore them and use the basic validation experiece (server-side)
 
 * <code>maxlength</code>
@@ -81,6 +56,31 @@ Help with proactive and reactive messaging.  Older user agents should ignore the
 * <code>autocomplete</code>  with the appropraite value.  identifies the values the input will represent.
 * <code>title</code> tooltip and validation message
 * <code>placeholder</code> enhancement for some users
+
+## Results
+### Presentation: NVDA on Firefox
+#### <code>onfocus</code> event
+_Syntax:_
+
+label + valid status + "edit" + required + title + placeholder + value
+
+_Actual:_
+
+> Mobile Phone edit required invalid  number has autocomplete Enter area code and phone number using parenthese and hyphen.  We will only use this phone number to protect access to your account. [pause] number number number [pause] number number number and four number blank.
+
+#### <code>oninvalid</code> event
+_Syntax:_
+
+"Alert: Please match the requested format:" + title
+
+_Actual:_
+> Alert: Please fill out this field.
+
+> Alert: Please match the requested format: Enter area code and phone number using parenthese and hyphen.  We will only use this phone number to protect access to your account.
+
+### Presentation JAWS on Firefox
+TBD
+
 
 ## References
 *  <a href="https://www.w3.org/TR/2017/REC-html52-20171214/sec-forms.html#clientside-form-validation">Client-Side Form Validation</a>
