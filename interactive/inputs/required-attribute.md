@@ -22,7 +22,7 @@ title : Required attribute
 ~~~
 
 <script>
-  document.write(q.validity)
+  document.write(q.validity.value)
 </script>
 
 ## Expectation
