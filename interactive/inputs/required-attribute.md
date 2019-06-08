@@ -22,14 +22,7 @@ title : Required attribute
 ~~~
 
 <script>
-  document.write(
-   '<p>valueMissing: ' & q.validity.valueMissing & '</p>
-    <p>badInput: '&q.validity.badInput & '</p>
-    <p>customError: ' & q.validity.customError & '</p>
-    <p>patternMismatch: '& q.validity.patternMismatch & '</p>
-    <p>typeMismatch: ' & q.validity.typeMismatch & '</p>
-    <p>valid: ' & q.validity.valid & '</p>'
-  );
+  document.write('<p>valueMissing: ' & q.validity.valueMissing & '</p><p>badInput: '&q.validity.badInput & '</p><p>customError: ' & q.validity.customError & '</p><p>patternMismatch: '& q.validity.patternMismatch & '</p><p>typeMismatch: ' & q.validity.typeMismatch & '</p><p>valid: ' & q.validity.valid & '</p>');
 </script>
 
 ## Expectation
