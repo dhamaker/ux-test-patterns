@@ -3,6 +3,7 @@ title : Required attribute
 ---
 # {{page.title}}
 
+</script>
 <form action="https://example.com/search-engine" method="post">
   <label>
     Query
@@ -20,10 +21,14 @@ title : Required attribute
   <button type="submit">Search</button>
 </form>
 ~~~
+<div id="validityReport"></div>
 
 <script>
-  document.write('<p>valueMissing: ' + q.validity.valueMissing + '</p><p>badInput: ' + q.validity.badInput + '</p><p>customError: ' + q.validity.customError + '</p><p>patternMismatch: ' +  q.validity.patternMismatch + '</p><p>typeMismatch: ' + q.validity.typeMismatch + '</p><p>valid: ' + q.validity.valid + '</p>');
+  function showValidityState() {
+    message='<p>valueMissing: ' + q.validity.valueMissing + '</p><p>badInput: ' + q.validity.badInput + '</p><p>customError: ' + q.validity.customError + '</p><p>patternMismatch: ' +  q.validity.patternMismatch + '</p><p>typeMismatch: ' + q.validity.typeMismatch + '</p><p>valid: ' + q.validity.valid + '</p>');
+    document..querySelector("#validityReport).innerHTML=value;
+  };
+  showValidityState();
 </script>
-
 ## Expectation
 User is unable to submit an empty search request.  An onSubmit event will fail and the useragent will prompt the user to fill out the field.
