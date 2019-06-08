@@ -9,7 +9,7 @@ title : Required attribute
     Query
     <input id="q" name="q" type="search" required value="" title="Enter search terms">
   </label>
-  <button type="submit">Search</button>
+  <button type="submit" onclick="showValidityState();return false;">Search</button>
 </form>
 
 ~~~
