@@ -2,8 +2,6 @@
 title : Required attribute
 ---
 # {{page.title}}
-
-</script>
 <form action="https://example.com/search-engine" method="post">
   <label>
     Query
