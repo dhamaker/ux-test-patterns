@@ -20,10 +20,11 @@ title : Required attribute
   <button type="submit">Search</button>
 </form>
 ~~~
+## Default Validity
+<div id="validityReport">
+<script>document.write('<p>valueMissing: ' + q.validity.valueMissing + '</p><p>valid: ' + q.validity.valid + '</p>');</script>
+</div>
 
-<script>
-  document.write(q.validity)
-</script>
 
 ## Expectation
 User is unable to submit an empty search request.  An onSubmit event will fail and the useragent will prompt the user to fill out the field.
