@@ -3,7 +3,7 @@ title : Required attribute
 ---
 # {{page.title}}
 
-<form action="https://example.com/search-engine" method="post">
+<form action="https://example.com/search-engine" method="get">
   <label>
     Query
     <input id="q" name="q" type="search" required value="" title="Enter search terms">
