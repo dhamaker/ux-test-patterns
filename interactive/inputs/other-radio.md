@@ -4,8 +4,8 @@ title: Radio Set with conditional subfield
 # {{page.title}}
 
 <style>
-  #other ~ #favoriteCity {display:none;}
-  #other:checked ~ #favoriteCity {display:inline-block;}
+  #other ~ #otherCity {display:none;}
+  #other:checked ~ #otherCity {display:inline-block;}
 </style>
 
 <form action="#" method="get">
