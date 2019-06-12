@@ -29,4 +29,5 @@ title: Radio Set with conditional subfield
       <label for="none">None, cities suck!</label>
     </p>
   </fieldset>
+  <button type="submit">Vote</button>
 </form>
