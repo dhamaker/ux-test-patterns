@@ -28,5 +28,5 @@ title: Radio Set with conditional subfield
       <input id="none" name="favoriteCity" type="radio" value="newyorkcity">
       <label for="none">None, cities suck!</label>
     </p>
-  <fieldset>
+  </fieldset>
 </form>
