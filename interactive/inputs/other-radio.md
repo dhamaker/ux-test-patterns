@@ -9,7 +9,7 @@ Is this an example of a radio sandwich?
 </style>
 
 <form action="#" method="get">
-  <fieldset>
+  <fieldset required>
     <legend>What is your favorite city?</legend>
     <p>
       <input id="nyc" name="favoriteCity" type="radio" value="newyorkcity">
