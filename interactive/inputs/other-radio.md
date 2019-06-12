@@ -2,7 +2,7 @@
 title: Radio Set with conditional subfield
 ---
 # {{page.title}}
-
+Is this an example of a radio sandwich?
 <style>
   #other ~ #otherCity {display:none;}
   #other:checked ~ #otherCity {display:inline-block;}
