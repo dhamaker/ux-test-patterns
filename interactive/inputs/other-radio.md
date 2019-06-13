@@ -7,7 +7,7 @@ Is this an example of a radio sandwich?
   #other ~ #otherCity {display:none;}
   #other:checked ~ #otherCity {display:inline-block;}
   #none ~ #alternate {display:none;}
-  #none:checked ~ #alternate {display:none;}
+  #none:checked ~ #alternate {display:block;}
 </style>
 
 <form action="#" method="get">
@@ -26,21 +26,21 @@ Is this an example of a radio sandwich?
       <label for="other">Other</label>
       <input id="otherCity" type="text" name="otherCity" value="" title="Favorite city">
     </p>
-    <p>
+    <div>
       <input id="none" name="favoriteCity" type="radio" value="newyorkcity">
       <label for="none">None, cities suck!</label>
       <fieldset id="alternate">
         <legend>I'd rather be...</legend>
-        <div>
+        <p>
           <label for="altActivity">Activity</label>
           <input id="altActivity" type="text" name="altActivity">
-        </div>
-        <div>
+        </p>
+        <p>
           <label for="altLocation">Location</label>
           <input id="altLocation" type="text" name="altLocation">
-        </div>
+        </p>
       </fieldset>
-    </p>
+    </div>
     <p>
       <input id="null" name="favoriteCity" type="radio" value="null">
       <label for="null">No comment</label>
