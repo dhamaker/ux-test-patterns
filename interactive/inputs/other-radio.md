@@ -31,14 +31,14 @@ Is this an example of a radio sandwich?
       <label for="none">None, cities suck!</label>
       <fieldset id="alternate">
         <legend>I'd rather be...</legend>
-        <p>
+        <div>
           <label for="altActivity">Activity</label>
           <input id="altActivity" type="text" name="altActivity">
-        </p>
-        <p>
+        </div>
+        <div>
           <label for="altLocation">Location</label>
           <input id="altLocation" type="text" name="altLocation">
-        </p>
+        </div>
       </fieldset>
     </p>
     <p>
