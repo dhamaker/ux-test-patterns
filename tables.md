@@ -7,7 +7,7 @@ title: Tables
     <tr>
       <th>Benefits</th>
       <th>Plan Gold</th>
-    <tr>
+    </tr>
   </thead>
   <tbody>
     <tr>
