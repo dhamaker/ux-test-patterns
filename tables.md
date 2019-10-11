@@ -12,11 +12,11 @@ title: Tables
   <tbody>
     <tr>
       <th scope="row">Walks (per day)</th>
-      <td>unlimited<td>
+      <td>unlimited</td>
     </tr>
     <tr>
       <th scope="row">Snacks</th>
-      <td>2<td>
+      <td>2</td>
     </tr>
   </tbody>
 </table>
