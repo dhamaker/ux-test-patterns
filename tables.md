@@ -15,7 +15,7 @@ title: Tables
       <td>unlimited</td>
     </tr>
     <tr>
-      <th scope="row">Snacks</th>
+      <th scope="row"><a href="http://example.com/snacks/">Snacks</a></th>
       <td>2</td>
     </tr>
   </tbody>
