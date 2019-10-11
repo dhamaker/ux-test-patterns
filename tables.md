@@ -5,8 +5,8 @@ title: Tables
 <table>
   <thead>
     <tr>
-      <th>Benefits</th>
-      <th>Plan Gold</th>
+      <th scope="col">Benefits</th>
+      <th scope="col">Plan Gold</th>
     </tr>
   </thead>
   <tbody>
