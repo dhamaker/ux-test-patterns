@@ -4,7 +4,7 @@ title : Expand/Collapse
 
 ## Single Expand Collapse
 <details>
-  <summary>Read Example</summary>
+  <summary>Features</summary>
   <div>
     <ul>
     <li>Control contents are independent of the document outline.</li>
@@ -16,19 +16,19 @@ title : Expand/Collapse
 
 ## Accordian
 <details>
-  <summary>Category 1</summary>
+  <summary>Category A</summary>
   <div>
     <p>This category details.</p>
   </div>
 </details>
 <details>
-  <summary>Category 2</summary>
+  <summary>Category B</summary>
   <div>
     <p>This category details.</p>
   </div>
 </details>
 <details>
-  <summary>Category 3</summary>
+  <summary>Category C</summary>
   <div>
     <p>This category details.</p>
   </div>
