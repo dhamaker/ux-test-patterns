@@ -15,4 +15,22 @@ title : Expand/Collapse
 </details>
 
 ## Accordian
+<details>
+  <summary>Category 1</summary>
+  <div>
+    <p>This category details.</p>
+  </div>
+</details>
+<details>
+  <summary>Category 2</summary>
+  <div>
+    <p>This category details.</p>
+  </div>
+</details>
+<details>
+  <summary>Category 3</summary>
+  <div>
+    <p>This category details.</p>
+  </div>
+</details>
 ## Step Control
