@@ -15,7 +15,7 @@ title: Forms
     <label>
       Parent plus
       <input type="text" id="labelParent" value="">
-      <small>Additional description</small>
+      <small>Additional label</small>
     </label>
   </p>
   <p>
@@ -23,8 +23,8 @@ title: Forms
     <input type="text" id="labelSibling" value="">
   </p>
   <p>
-   <label for="labelSibling3">Sibling plus</label>
-   <input type="text" id="labelSibling3" aria-labeledby="labelSibling3 instruction3" value="">
+   <label id="siblingLabel3" for="labelSibling3">Sibling plus</label>
+   <input type="text" id="labelSibling3" aria-labeledby="siblingLabel3 instruction3" value="">
    <small id="instruction3">Additional label</small>
   </p>
   <p>
