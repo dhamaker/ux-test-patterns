@@ -1,5 +1,5 @@
 ---
-title: Buttons
+title: Forms
 ---
 
 <p>Inputs use <code>&lt;p&gt;</code> semantics following examples in HTML 5 spec.</p>
@@ -9,6 +9,13 @@ title: Buttons
     <label>
       Parent
       <input type="text" id="labelParent" value="">
+    </label>
+  </p>
+   <p>
+    <label>
+      Parent plus
+      <input type="text" id="labelParent" value="">
+      <small>Additional description</small
     </label>
   </p>
   <p>
