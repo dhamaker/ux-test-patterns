@@ -22,6 +22,17 @@ title: Forms
     <label for="labelSibling">Sibling</label>
     <input type="text" id="labelSibling" value="">
   </p>
+  <p>
+   <label for="labelSibling3">Sibling plus</label>
+   <input type="text" id="labelSibling3" aria-labeledby="labelSibling3 instruction3" value="">
+   <small id="instruction3">Additional label</small>
+  </p>
+  <p>
+    <label for="labelSibling2">Sibling plus</label>
+    <input type="text" id="labelSibling2" aria-describedby="instruction2" value="">
+    <small id="instruction2">Additional description</small>
+  </p>  
+  
 </form>
 
 <form action="#" method="get">
