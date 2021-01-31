@@ -111,4 +111,30 @@ title: Forms
       <option value="affect">
     </datalist>
   </p>
+   </p>
+    <label>
+      Select
+      <select id="autocomplete">
+        <option value="0">Select One</option>
+        <option value="1">January</option>
+        <option value="2">February</option>
+        <option value="3">March</option>
+        <option value="4">April</option>
+        <option value="5">May</option>
+        <option value="6">June</option>
+        <option value="7">July</option>
+      </select>
+    </label>
+  </p>
+  <fieldset>
+    <legend>Are you ok?</legend>
+    <label><input name="emotion" type="radio" value="Well" checked />Yes</label>
+    <label><input name="emotion" type="radio" value="Unwell" />No</label>
+  </fieldset>
+  <fieldset>
+    <legend>Spices</legend>
+    <label><input type="checkbox" value="salt" />Salt</label>
+    <label><input type="checkbox" value="pepper" />Pepper</label>
+    <label><input type="checkbox" value="curry" />Curry</label>
+  </fieldset> 
 </form>
