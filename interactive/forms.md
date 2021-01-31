@@ -18,7 +18,7 @@ title: Buttons
 </form>
 
 <form action="#" method="get">
-  <h2>Input <code>type</code></h2
+  <h2>Input <code>type</code></h2>
   <p>Parent labels used to minimize coding. HTML types  have native support for:</p>
   <ul>
     <li>Accessibility</li>
