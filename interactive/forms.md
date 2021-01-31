@@ -25,12 +25,12 @@ title: Forms
   <p>
    <label id="siblingLabel3" for="labelSibling3">Sibling plus</label>
    <input type="text" id="labelSibling3" aria-labelledby="siblingLabel3 instruction3" value="">
-   <small id="instruction3">Additional label</small>
+   <small id="instruction3">ARIA label</small>
   </p>
   <p>
     <label for="labelSibling2">Sibling plus</label>
     <input type="text" id="labelSibling2" aria-describedby="instruction2" value="">
-    <small id="instruction2">Additional description</small>
+    <small id="instruction2">ARIA description</small>
   </p>  
   
 </form>
