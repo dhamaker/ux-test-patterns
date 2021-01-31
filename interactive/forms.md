@@ -81,7 +81,7 @@ title: Buttons
   <p>
     <label>
       Autocomplete/filter List
-      <input list="autofilter id="alpha" />
+      <input list="autofilter" id="alpha" />
     </label>
     <datalist id="autofilter">
       <option value="aardvark">
