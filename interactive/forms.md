@@ -3,7 +3,7 @@ title: Buttons
 ---
 
 <p>Inputs use <code>&lt;p&gt;</code> semantics following examples in HTML 5 spec.</p>
-<form action="# method="get">
+<form action="#" method="get">
   <h2>Label structure comparison: parent vs sibling</h2>
   <p>
     <label>
