@@ -15,7 +15,7 @@ title: Forms
     <label>
       Parent plus
       <input type="text" id="labelParent" value="">
-      <small>Additional description</small
+      <small>Additional description</small>
     </label>
   </p>
   <p>
