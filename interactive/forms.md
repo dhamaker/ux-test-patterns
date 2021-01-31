@@ -81,15 +81,16 @@ title: Buttons
   <p>
     <label>
       Autocomplete/filter List
-      <input list="autocomplete id="alpha">
+      <input list="autofilter id="alpha">
     </label>
-    <datalist id="autocomplete">
+    <datalist id="autofilter">
       <option value="aardvark">
       <option value="absolute">
-      <option value="abscond>"
-      <option value="admit>"
-      <option value="adrift>"
-      <option value="aesop>"
-      <option value="affect>"
+      <option value="abscond">
+      <option value="admit">
+      <option value="adrift">
+      <option value="aesop">
+      <option value="affect">
+    </datalist>
   </p>
 </form>
