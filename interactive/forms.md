@@ -51,12 +51,13 @@ title: Buttons
       <input type="number" id="counter" value="" min="0" max="12">
     </label>
   </p>
+
   <p>
     <label>
       Slider
-      <input type="range" id="range" value="0" min="-100" max="100" step="10">
+      <input type="range" name="slider" id="slider" value="0" min="-100" max="100" step="10">
     </label>
-    <output for="range"></output>
+    <output for="slider"></output>
   </p>
 
   <p>
