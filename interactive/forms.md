@@ -80,8 +80,16 @@ title: Buttons
   </p>
   <p>
     <label>
-      List
-      <input type="list" id="time" value="">
+      Autocomplete/filter List
+      <input list="autocomplete id="alpha">
     </label>
+    <datalist id="autocomplete">
+      <option value="aardvark">
+      <option value="absolute">
+      <option value="abscond>"
+      <option value="admit>"
+      <option value="adrift>"
+      <option value="aesop>"
+      <option value="affect>"
   </p>
 </form>
