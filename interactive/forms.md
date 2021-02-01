@@ -111,7 +111,7 @@ title: Forms
       <option value="affect">
     </datalist>
   </p>
-   </p>
+  <p>
     <label>
       Select
       <select id="autocomplete">
