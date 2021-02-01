@@ -99,9 +99,9 @@ title: Forms
   <p>
     <label>
       Autofilter list
-      <input list="autofilter" id="alpha" />
+      <input type="text" list="myList" id="alpha" />
     </label>
-    <datalist id="dropdown">
+    <datalist id="myList">
       <option value="aardvark">
       <option value="absolute">
       <option value="abscond">
