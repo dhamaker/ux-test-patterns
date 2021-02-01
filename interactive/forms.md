@@ -98,7 +98,7 @@ title: Forms
   </p>
   <p>
     <label>
-      Autocomplete/filter List
+      Autofilter list
       <input list="autofilter" id="alpha" />
     </label>
     <datalist id="dropdown">
