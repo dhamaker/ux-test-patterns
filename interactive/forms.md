@@ -8,13 +8,13 @@ title: Forms
   <p>
     <label>
       Parent
-      <input type="text" id="labelParent" value="">
+      <input type="text" id="labelParent1" value="">
     </label>
   </p>
    <p>
     <label>
       Parent plus
-      <input type="text" id="labelParent" value="">
+      <input type="text" id="labelParent2" value="">
       <small>Additional label</small>
     </label>
   </p>
