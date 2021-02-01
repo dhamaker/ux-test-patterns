@@ -101,7 +101,7 @@ title: Forms
       Autocomplete/filter List
       <input list="autofilter" id="alpha" />
     </label>
-    <datalist id="autofilter">
+    <datalist id="dropdown">
       <option value="aardvark">
       <option value="absolute">
       <option value="abscond">
@@ -114,7 +114,7 @@ title: Forms
   <p>
     <label>
       Select
-      <select id="autocomplete">
+      <select id="select">
         <option value="0">Select One</option>
         <option value="1">January</option>
         <option value="2">February</option>
