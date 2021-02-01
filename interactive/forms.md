@@ -100,16 +100,16 @@ title: Forms
     <label>
       Autofilter list
       <input type="text" list="myList" id="alpha" />
+      <datalist id="myList">
+       <option value="aardvark">
+       <option value="absolute">
+       <option value="abscond">
+       <option value="admit">
+       <option value="adrift">
+       <option value="aesop">
+       <option value="affect">
+     </datalist>
     </label>
-    <datalist id="myList">
-      <option value="aardvark">
-      <option value="absolute">
-      <option value="abscond">
-      <option value="admit">
-      <option value="adrift">
-      <option value="aesop">
-      <option value="affect">
-    </datalist>
   </p>
   <p>
     <label>
