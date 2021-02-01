@@ -101,6 +101,7 @@ title: Forms
       Autofilter list
       <input list="autofilter" id="alpha" />
     </label>
+  </p>
     <datalist id="dropdown">
       <option value="aardvark">
       <option value="absolute">
@@ -110,7 +111,6 @@ title: Forms
       <option value="aesop">
       <option value="affect">
     </datalist>
-  </p>
   <p>
     <label>
       Select
