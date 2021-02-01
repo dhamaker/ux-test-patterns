@@ -101,13 +101,13 @@ title: Forms
       Autofilter list
       <input type="text" list="myList" id="alpha" />
       <datalist id="myList">
-       <option value="aardvark">
-       <option value="absolute">
-       <option value="abscond">
-       <option value="admit">
-       <option value="adrift">
-       <option value="aesop">
-       <option value="affect">
+       <option>aardvark</option>
+       <option>absolute</option>
+       <option>abscond</option>
+       <option>admit</option>
+       <option>adrift</option>
+       <option>aesop</option>
+       <option>affect</option>
      </datalist>
     </label>
   </p>
