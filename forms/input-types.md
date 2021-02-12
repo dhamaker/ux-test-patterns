@@ -1,5 +1,5 @@
 ---
-title=Native HTML5 Input types
+title: Native HTML5 Input types
 ---
 
 <form action="#" method="get">
