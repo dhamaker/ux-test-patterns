@@ -36,8 +36,6 @@ title: Input labels
   </p>
 </form>
 <form id="query" action="#" method="get">
-  <p>
     <input placeholder="keyword" type="search" id="sibling2" value="" title="Label by title">
-  </p>
-  <button type="submit">Search</button>
+    <button type="submit">Search</button>
 </form>
