@@ -69,26 +69,24 @@ title: Native HTML5 Input types
       <option>aardvark</option>
       <option>absolute</option>
       <option>abscond</option>
-      <option">admit</option>
+      <option>admit</option>
       <option>adrift</option>
       <option>aesop</option>
       <option>affect</option>
     </datalist>
   </p>
   <p>
-    <label>
-      Select
-      <select id="select">
-        <option value="0">Select One</option>
-        <option value="1">January</option>
-        <option value="2">February</option>
-        <option value="3">March</option>
-        <option value="4">April</option>
-        <option value="5">May</option>
-        <option value="6">June</option>
-        <option value="7">July</option>
-      </select>
-    </label>
+    <label for="select">Select</select>
+    <select id="select">
+      <option value="0">Select One</option>
+      <option value="1">January</option>
+      <option value="2">February</option>
+      <option value="3">March</option>
+      <option value="4">April</option>
+      <option value="5">May</option>
+      <option value="6">June</option>
+      <option value="7">July</option>
+    </select>
   </p>
   <fieldset>
     <legend>Are you ok?</legend>
