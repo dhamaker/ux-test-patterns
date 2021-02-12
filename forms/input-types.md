@@ -66,13 +66,13 @@ title: Native HTML5 Input types
     <label for="combo">Combobox</label>
     <input id="combo" list="list1">
     <datalist id="list1">
-      <option value="aardvark">
-      <option value="absolute">
-      <option value="abscond">
-      <option value="admit">
-      <option value="adrift">
-      <option value="aesop">
-      <option value="affect">
+      <option>aardvark</option>
+      <option>absolute</option>
+      <option>abscond</option>
+      <option">admit</option>
+      <option>adrift</option>
+      <option>aesop</option>
+      <option>affect</option>
     </datalist>
   </p>
   <p>
