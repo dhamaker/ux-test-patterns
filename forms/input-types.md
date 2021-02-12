@@ -63,10 +63,8 @@ title: Native HTML5 Input types
     </label>
   </p>
   <p>
-    <label>
-      Autocomplete/filter List
-      <input list="list1" id="alpha">
-    </label>
+    <label for="combo">Combobox</label>
+    <input id="combo" list="list1">
     <datalist id="list1">
       <option value="aardvark">
       <option value="absolute">
