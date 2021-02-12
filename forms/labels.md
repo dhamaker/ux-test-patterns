@@ -34,4 +34,7 @@ title: Input labels
     <input type="text" id="labelSibling2" aria-describedby="instruction2" value="">
     <small id="instruction2">with ARIA description</small>
   </p>
+  <p>
+    <input type="search" id="sibling2" value="" title="Label by title">
+  </p>
 </form>
