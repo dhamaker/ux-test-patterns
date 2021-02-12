@@ -7,6 +7,9 @@ title : Pattern Inventory
 * HTML5 native ```form``` Attributes
 * Anchor link attributes
 
-[labels](forms/labels.html)
-[native input types](forms/input-types.html)
-[input](forms/input.htmls)
+## Form examples
+[Labels](forms/labels.html) Demonstrate different labeling methods.
+
+[Native input types](forms/input-types.html)  Demonstrate native HTML5 input types.
+
+[Input](forms/input.htmls)
