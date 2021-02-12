@@ -34,7 +34,10 @@ title: Input labels
     <input type="text" id="labelSibling2" aria-describedby="instruction2" value="">
     <small id="instruction2">with ARIA description</small>
   </p>
+</form>
+<form id="query" action="#" method="get">
   <p>
-    <input type="search" id="sibling2" value="" title="Label by title">
+    <input placeholder="keyword" type="search" id="sibling2" value="" title="Label by title">
   </p>
+  <button type="submit">Search</button>
 </form>
