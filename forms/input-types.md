@@ -76,7 +76,7 @@ title: Native HTML5 Input types
     </datalist>
   </p>
   <p>
-    <label for="select">Select</select>
+    <label for="select">Select</label>
     <select id="select">
       <option value="0">Select One</option>
       <option value="1">January</option>
