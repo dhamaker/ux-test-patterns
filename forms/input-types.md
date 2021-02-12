@@ -65,9 +65,9 @@ title: Native HTML5 Input types
   <p>
     <label>
       Autocomplete/filter List
-      <input list="autocomplete" id="alpha" />
+      <input list="list1" id="alpha">
     </label>
-    <datalist id="dropdown">
+    <datalist id="list1">
       <option value="aardvark">
       <option value="absolute">
       <option value="abscond">
@@ -94,13 +94,13 @@ title: Native HTML5 Input types
   </p>
   <fieldset>
     <legend>Are you ok?</legend>
-    <label><input name="emotion" type="radio" value="Well" checked />Yes</label>
-    <label><input name="emotion" type="radio" value="Unwell" />No</label>
+    <label><input name="emotion" type="radio" value="Well" checked>Yes</label>
+    <label><input name="emotion" type="radio" value="Unwell">No</label>
   </fieldset>
   <fieldset>
     <legend>Spices</legend>
-    <label><input type="checkbox" value="salt" />Salt</label>
-    <label><input type="checkbox" value="pepper" />Pepper</label>
-    <label><input indeterminate type="checkbox" value="curry" />Curry</label>
+    <label><input type="checkbox" value="salt">Salt</label>
+    <label><input type="checkbox" value="pepper">Pepper</label>
+    <label><input type="checkbox" value="curry">Curry</label>
   </fieldset>
 </form>
