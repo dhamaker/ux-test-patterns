@@ -5,7 +5,7 @@ title: Input labels
 <p>Inputs use <code>&lt;p&gt;</code> semantics following examples in HTML 5 spec.</p>
 
 <form action="#" method="get">
-  <h2>Label structure comparison: parent vs sibling</h2>
+  <h2>Input labels</h2>
   <p>A 'parent' label wraps the input in a <code>&lt;label&gt;</code> element.  A 'sibling' label uses the label's <code>for</code> attribute to reference the sibling id.</p>
   <p>
     <label>
