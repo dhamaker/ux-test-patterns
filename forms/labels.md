@@ -15,9 +15,9 @@ title: Input labels
   </p>
   <p>
     <label>
-      Parent plus
+      Parent
       <input type="text" id="labelParent2" value="">
-      <small>Additional label</small>
+      <small>includes additional label</small>
     </label>
   </p>
   <p>
