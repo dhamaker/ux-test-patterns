@@ -21,8 +21,8 @@ title: Input labels
     </label>
   </p>
   <p>
-    <label for="sibling2">Sibling</label>
-    <input type="text" id="sibling2" value="">
+    <label for="sibling1">Sibling</label>
+    <input type="text" id="sibling1" value="">
   </p>
   <p>
     <label id="sibling3Label" for="sibling3">Sibling</label>
@@ -36,6 +36,6 @@ title: Input labels
   </p>
 </form>
 <form id="query" action="#" method="get">
-    <input placeholder="keyword" type="search" id="sibling2" value="" title="Label by title">
+    <input placeholder="keyword" type="search" id="searchNoLabel" value="" title="Label by title">
     <button type="submit">Search</button>
 </form>
