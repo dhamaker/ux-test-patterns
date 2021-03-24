@@ -15,6 +15,7 @@
       li {margin-bottom:1em;}
       button {font-size:1.25em;}
       [aria-pressed="true"] {font-weight:bold}
+      [aria-label~="selected"] {font-weight:bold}
     </style>
   </head>
     <body>
@@ -35,14 +36,14 @@
                   </li>
                 </ul>
 
-                <h2>Toggle w/ aria-pressed and aria-label</h2>
-              <p>Javascript toggle the aria-pressed state and the aria-label values. The aria label switches between [name]+"unselected" and [name]+"selected".</p>
+                <h2>Toggle  aria-label</h2>
+              <p>Javascript toggle the aria-label values. The aria label switches between [name]+"unselected" and [name]+"selected". The selected visual style is bold using CSS selector.</p>
                 <ul>
                   <li>
-                    <button id="food" class="show-hide__button" type="button" onclick="togglePressLabel(this)" aria-pressed="false" value="Off" aria-label="Food unselected">Food</button>
+                    <button id="food" class="show-hide__button" type="button" onclick="togglePressLabel(this)" aria-label="Food unselected">Food</button>
                   </li>
                   <li>
-                    <button id="travel" class="show-hide__button" type="button" onclick="togglePressLabel(this)" aria-pressed="false" value="Off" aria-label="Travel unselected">Travel</button>
+                    <button id="travel" class="show-hide__button" type="button" onclick="togglePressLabel(this)" aria-label="Travel unselected">Travel</button>
                   </li>
                 </ul>
               
@@ -85,7 +86,7 @@
                     name = "unselected";
                     state = "false";
                 }
-                e.setAttribute("aria-pressed", state);
+            
                 e.setAttribute("aria-label", lbl+name)
             }
 
