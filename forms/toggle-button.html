@@ -23,21 +23,32 @@
             <p>Using button with aria-pressed</p>
         </header>
         <main>
-          <p>Javascript toggles the aria-pressed between true and false.   Pressed state is shown visually as old text using [aria-pressed="true"].
             <form action="#" method="get">
+                <h2>Toggle aria-pressed</h2>
+                <p>Javascript toggles the aria-pressed between true and false.   Pressed state is shown visually as old text using [aria-pressed="true"].
                 <ul>
                   <li>
-                    <button id="fruit" class="show-hide__button" type="button" onclick="toggleSecurity(this)" aria-pressed="false" value="Off">Fruit</button>
+                    <button id="fruit" class="show-hide__button" type="button" onclick="togglePress(this)" aria-pressed="false" value="Off">Fruit</button>
                   </li>
                   <li>
-                    <button id="vegetables" class="show-hide__button" type="button" onclick="toggleSecurity(this)" aria-pressed="false" value="Off">Vegetables</button>
+                    <button id="vegetables" class="show-hide__button" type="button" onclick="togglePress(this)" aria-pressed="false" value="Off">Vegetables</button>
+                  </li>
+                </ul>
+
+                <h2>Toggle w/ aria-pressed and aria-label</h2>
+                <ul>
+                  <li>
+                    <button id="food" class="show-hide__button" type="button" onclick="togglePressLabel(this)" aria-pressed="false" value="Off" aria-label="Food unselected">Food</button>
+                  </li>
+                  <li>
+                    <button id="travel" class="show-hide__button" type="button" onclick="togglePressLabel(this)" aria-pressed="false" value="Off" aria-label="Travel unselected">Travel</button>
                   </li>
                 </ul>
             </form>
         </main>
         <script>
 
-            function toggleSecurity (e) {
+            function togglePress (e) {
                 if (e.ariaPressed=="false") {
                     // toggle button state and label ON
                     e.setAttribute("aria-pressed", "true");
@@ -45,9 +56,25 @@
                     // toggle button state and label OFF
                     e.setAttribute("aria-pressed", "false");
                 }
-        
+            }
+
+            function togglePressLabel (e) {
+                var lbl = e.textContent;
+                var state;
+                if (e.ariaPressed=="false") {
+                    // toggle button state and label ON
+                    name = "selected";
+                    state = "true";
+                } else {
+                    // toggle button state and label OFF
+                    name = "unselected";
+                    state = "false";
+                }
+                e.setAttribute("aria-pressed", state);
+                e.setAttribute("aria-label", lbl+name)
             }
 
         </script>
     </body>
 </html>
+
