@@ -36,6 +36,7 @@
                 </ul>
 
                 <h2>Toggle w/ aria-pressed and aria-label</h2>
+              <p>Javascript toggle the aria-pressed state and the aria-label values. The aria label switches between [name]+"unselected" and [name]+"selected".</p>
                 <ul>
                   <li>
                     <button id="food" class="show-hide__button" type="button" onclick="togglePressLabel(this)" aria-pressed="false" value="Off" aria-label="Food unselected">Food</button>
@@ -46,14 +47,18 @@
                 </ul>
               
                 <h2>Toggle w/ checkboxes</h2>
+              <p>Simple unadorned checkboxes</p>
+              <fieldset>
+                <legend>Filter on</legend>
                 <ul>
                   <li>
-                    <label><input id="foodCheck" type="checkbox">Food</label>
+                    <label><input id="liquids" type="checkbox">Liquids</label>
                   </li>
                   <li>
-                    <label><input id="travelCheck" type="checkbox">Travel</label>
+                    <label><input id="solids" type="checkbox">Solids</label>
                   </li>
                 </ul>
+              </fieldset>
             </form>
         </main>
         <script>
