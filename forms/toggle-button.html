@@ -20,11 +20,14 @@
         </header>
         <main>
             <form action="#" method="get">
-                <p>
-                    <input type="text">
-                    <button class="show-hide__button" type="button" onclick="toggleSecurity(this)" aria-pressed="false">Off</button>
-                    <span role="status"></span>
-                </p>
+                <ul>
+                  <li>
+                    <button class="show-hide__button" type="button" onclick="toggleSecurity(this)" aria-pressed="false">Fruit</button>
+                  </li>
+                  <li>
+                    <button class="show-hide__button" type="button" onclick="toggleSecurity(this)" aria-pressed="false">Vegetables</button>
+                  </li>
+                </ul>
                 <ul>
                         <li>Anatomy: label, password input, button, status</li>
                         <li>Toggle button</li>
@@ -37,20 +40,13 @@
 
             function toggleSecurity (e) {
                 if (e.ariaPressed=="false") {
-                    // change input type to 'text'
-                    //e.nextElementSibling.textContent="ON";
-
                     // toggle button state and label ON
                     e.setAttribute("aria-pressed", "true");
-                    e.textContent = "On";
 
                     )
                 } else {
-
                     // toggle button state and label OFF
                     e.setAttribute("aria-pressed", "false");
-                    e.textContent = "Off";
-
                 }
         
             }
