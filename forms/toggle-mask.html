@@ -1,31 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>ARIA Live </title>
-    </head>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARIA Live </title>
+    <style media="screen">
+      body {font-family:sans-serif; line-height:1.5}
+      input {display:block;}
+      label span, .inputInstructions {display:block;color:#666;font-style:italic;font-weight:normal;}
+      form {margin:2em;border:1px solid #666;padding:1em;}
+      label {font-weight:bold;font-size:.85em;}
+      #t1 label span {color:rgba(0,0,0,0); display:inline;}
+      q {display:block;padding:1em;background:#eee;margin:1em;}
+    </style>
+  </head>
     <body>
         <header>
             <h1>Security Mask - ARIA Live Example</h1>
         </header>
         <main>
-            <form action="#">
+            <form action="#" method="get">
+                <h2>DS example - live region</h2>
                 <p data-libn="@usb-shield" data-basev="3.2.0" data-compv="1.2.0" data-compn="@usb-shield/react-forms-input-text" class="usb--wrapper     ">
                     <label id="label_test-input-showhide" for="input_test-input-showhide" class="usb--floating-label">Live region + JS mask</label>
                     <input id="input_test-input-showhide" aria-invalid="false" name="test-input-showhide" class="usb--basic-input" type="text" required="" value="">
                     <button class="show-hide__button" type="button" aria-live="polite" onclick="toggleLabel(this, 'Show', 'Hide')">Show</button>
                 </p>
+                <h2>Toggle button</h2>
                 <p data-libn="@usb-shield" data-basev="3.2.0" data-compv="1.2.0" data-compn="@usb-shield/react-forms-input-text" class="usb--wrapper     ">
                     <label id="label_test-input-showhide2" for="input_test-input-showhide2" class="usb--floating-label">Secret</label>
                     <input id="input_test-input-showhide2" aria-invalid="false" name="test-input-showhide2" class="usb--basic-input" type="password" required="" value="private note">
                     <button class="show-hide__button" type="button" onclick="toggleSecurity(this)" aria-pressed="false" aria-controls="input_test-input-showhide2">Show Secret</button>
                     <span role="status"></span>
                 </p>
-                    <ul>
+                <ul>
                         <li>Anatomy: label, password input, button, status</li>
                         <li>Toggle button</li>
                         <li>Pressed ON change input type from password to text, change button display to on, set focus to input, update status.  Timer to automatically toggle off (NOT WORKING RIGHT.  NEED ALT DESIGN TO PREVENT TOGGLING WHEN WORKING IN FIELD.</li>
                         <li>Press OFF, change input type back to password, change button display to off, update status.</li>
-                    </ul>
+                </ul>
             </form>
         </main>
         <script>
