@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>ARIA Live </title>
+    </head>
+    <body>
+        <header>
+            <h1>Security Mask - ARIA Live Example</h1>
+        </header>
+        <main>
+            <form action="#">
+                <p data-libn="@usb-shield" data-basev="3.2.0" data-compv="1.2.0" data-compn="@usb-shield/react-forms-input-text" class="usb--wrapper     ">
+                    <label id="label_test-input-showhide" for="input_test-input-showhide" class="usb--floating-label">Live region + JS mask</label>
+                    <input id="input_test-input-showhide" aria-invalid="false" name="test-input-showhide" class="usb--basic-input" type="text" required="" value="">
+                    <button class="show-hide__button" type="button" aria-live="polite" onclick="toggleLabel(this, 'Show', 'Hide')">Show</button>
+                </p>
+                <p data-libn="@usb-shield" data-basev="3.2.0" data-compv="1.2.0" data-compn="@usb-shield/react-forms-input-text" class="usb--wrapper     ">
+                    <label id="label_test-input-showhide2" for="input_test-input-showhide2" class="usb--floating-label">Secret</label>
+                    <input id="input_test-input-showhide2" aria-invalid="false" name="test-input-showhide2" class="usb--basic-input" type="password" required="" value="private note">
+                    <button class="show-hide__button" type="button" onclick="toggleSecurity(this)" aria-pressed="false" aria-controls="input_test-input-showhide2">Show Secret</button>
+                    <span role="status"></span>
+                    <ul>
+                        <li>Anatomy: label, password input, button, status</li>
+                        <li>Toggle button</li>
+                        <li>Pressed ON change input type from password to text, change button display to on, set focus to input, update status.  Timer to automatically toggle off (NOT WORKING RIGHT.  NEED ALT DESIGN TO PREVENT TOGGLING WHEN WORKING IN FIELD.</li>
+                        <li>Press OFF, change input type back to password, change button display to off, update status.</li>
+                    </ul>
+                </p>
+            </form>
+        </main>
+        <script>
+            function toggleLabel(e, a,b){
+                if (e.innerHTML == a) {
+                    e.innerHTML = b;
+                } else {
+                    e.innerHTML = a;
+                }
+            }
+            function toggleSecurity (e) {
+                if (e.ariaPressed=="false") {
+                    // change input type to 'text'
+                    e.nextElementSibling.textContent="text is visible";
+                    document.getElementById(e.getAttribute("aria-controls")).setAttribute("type", "text");
+                    document.getElementById(e.getAttribute("aria-controls")).focus();
+                    // toggle button state and label ON
+                    e.setAttribute("aria-pressed", "true");
+                    e.textContent = "Hide Secret";
+                    // Update status update:  field is unsecure
+
+                    // start timer at limit set input to password 
+                    // TODO move timer to onblur if text.
+                    setTimeout(function(){
+                        document.getElementById(e.getAttribute("aria-controls")).setAttribute("type", "password");
+                        e.setAttribute("aria-pressed", "false");
+                       e.textContent = "Show Secret ";      
+                       e.nextElementSibling.textContent="Secret is protected";
+                       // Update status: field is secure      
+                }, 15000
+                    )
+                } else {
+                    // TODO cancel timer
+                    // change input type to 'password'
+                    document.getElementById(e.getAttribute("aria-controls")).setAttribute("type", "password");
+                    // toggle button state and label OFF
+                    e.setAttribute("aria-pressed", "false");
+                    e.textContent = "Show Secret ";
+                    // Update status:  field is secure.
+                    //myStatus=e.parentElement.querySelector('role="status"'');
+                    //myStatus.textContent="hello";
+                     e.nextElementSibling.textContent="text is protected";
+                }
+        
+            }
+
+        </script>
+    </body>
+</html>
