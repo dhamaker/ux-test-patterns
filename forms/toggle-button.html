@@ -27,6 +27,8 @@
             <form action="#" method="get">
                 <h2>Toggle aria-pressed</h2>
                 <p>Javascript toggles the aria-pressed between true and false.   Pressed state is shown visually as old text using [aria-pressed="true"].
+                <fieldset>
+                <legend>Filter</legend>
                 <ul>
                   <li>
                     <button id="fruit" class="show-hide__button" type="button" onclick="togglePress(this)" aria-pressed="false" value="Off">Fruit</button>
@@ -35,7 +37,7 @@
                     <button id="vegetables" class="show-hide__button" type="button" onclick="togglePress(this)" aria-pressed="false" value="Off">Vegetables</button>
                   </li>
                 </ul>
-
+                </fieldset>
                 <h2>Toggle  aria-label</h2>
               <p>Javascript toggle the aria-label values. The aria label switches between [name]+"unselected" and [name]+"selected". The selected visual style is bold using CSS selector.</p>
                 <ul>
@@ -50,7 +52,7 @@
                 <h2>Toggle w/ checkboxes</h2>
               <p>Simple unadorned checkboxes</p>
               <fieldset>
-                <legend>Filter on</legend>
+                <legend>Filter</legend>
                 <ul>
                   <li>
                     <label><input id="liquids" type="checkbox">Liquids</label>
