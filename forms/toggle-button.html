@@ -50,8 +50,8 @@
               
                 <h3>Group by list</h3>
                 <p>Javascript toggles the aria-pressed between true and false.   Pressed state is shown visually as old text using [aria-pressed="true"].</p>
-                <p>Filter:</p>
-                <ul>
+                <p id="listLabel">Filter</p>
+                <ul aria-labelledby="listLabel">
                   <li>
                     <button id="fruit1" class="show-hide__button" type="button" onclick="togglePress(this)" aria-pressed="false" value="Off">Fruit</button>
                   </li>
