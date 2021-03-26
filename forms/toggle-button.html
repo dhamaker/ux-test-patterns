@@ -25,16 +25,16 @@
         </header>
         <main>
             <form action="#" method="get">
-                <h2>Toggle aria-pressed (group by fieldset)</h2>
+              <h2>Toggle Button (aria-pressed)</h2>
+                <h3>Group by fieldset</h3>
                 <p>Javascript toggles the aria-pressed between true and false.   Pressed state is shown visually as old text using [aria-pressed="true"].</p>
                 <fieldset>
                 <legend>Filter</legend>
                     <button id="fruit0" class="show-hide__button" type="button" onclick="togglePress(this)" aria-pressed="false" value="Off">Fruit</button>
                     <button id="vegetables0" class="show-hide__button" type="button" onclick="togglePress(this)" aria-pressed="false" value="Off">Vegetables</button>
-                </ul>
                 </fieldset>
           
-                <h2>Toggle aria-pressed (group by fielset and list)</h2>
+                <h3>Group by fielset and list</h3>
                 <p>Javascript toggles the aria-pressed between true and false.   Pressed state is shown visually as old text using [aria-pressed="true"].</p>
                 <fieldset>
                 <legend>Filter</legend>
@@ -48,9 +48,9 @@
                 </ul>
                 </fieldset>
               
-                <h2>Toggle aria-pressed (group by list)</h2>
+                <h3>Group by list</h3>
                 <p>Javascript toggles the aria-pressed between true and false.   Pressed state is shown visually as old text using [aria-pressed="true"].</p>
-          <p>Filter:</p>
+                <p>Filter:</p>
                 <ul>
                   <li>
                     <button id="fruit1" class="show-hide__button" type="button" onclick="togglePress(this)" aria-pressed="false" value="Off">Fruit</button>
@@ -60,7 +60,8 @@
                   </li>
                 </ul>
           
-                <h2>[context] Toggle  aria-label</h2>
+              <h2>Alternate explorations</h2>
+              <h3>Toggle  aria-label</h3>
               <p>Javascript toggle the aria-label values. The aria label switches between [name]+"unselected" and [name]+"selected". The selected visual style is bold using CSS selector.</p>
                 <ul>
                   <li>
@@ -71,7 +72,7 @@
                   </li>
                 </ul>
               
-                <h2>[context]  Toggle w/ checkboxes</h2>
+                <h3>Toggle w/ checkboxes</h3>
               <p>Simple unadorned checkboxes</p>
               <fieldset>
                 <legend>Filter</legend>
